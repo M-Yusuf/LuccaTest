@@ -44,8 +44,86 @@ input:focus, button:focus {
   width: 610px;
 }
 
+.message-container > div {
+  margin-bottom: 18px;
+}
+
+.message-content-container {
+  display: flex;
+}
+
+.message-content-container > img {
+  height: 150px;
+  vertical-align: top;
+  width: 150px;
+}
+
+.message-content-container > p {
+  background-color: #fff;
+  color: #666666;
+  line-height: 1.5;
+  min-height: 143px;
+  padding: 4px 12px;
+  width: 425px;
+}
+
+.message-container > div > p {
+  margin-bottom: 11px;
+} 
+
+.message-container > div > p > b {
+  font-weight: 700;
+} 
+
+.message-container > div:nth-child(odd) > div {
+  flex-direction: row-reverse;
+}
+
+.message-container > div:nth-child(odd) > p {
+  color: #0F98D0 !important;
+  margin-right: 160px;
+  text-align: right;
+}
+
+.message-container > div:nth-child(odd) > p::after {
+  content: "◣";
+  font-size: 2.4rem;
+  position: absolute;
+  padding-left: 9px;
+  margin-top: -6px;
+}
+
+.message-container > div:nth-child(odd) > div > img {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  margin-left: -2px;
+}
+
+.message-container > div:nth-child(even) > div {
+  flex-direction: row;
+}
+
+.message-container > div:nth-child(even) > p {
+  color: #006666 !important;
+  margin-left: 157px;
+}
+
+.message-container > div:nth-child(even) > p::before {
+  content: "◢";
+  font-size: 2.4rem;
+  position: absolute;
+  margin-top: -6px;
+  margin-left: -38px;
+}
+
+.message-container > div:nth-child(even) > div > img {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  margin-right: -2px;
+}
+
 .type-animation-container {
-  margin: 18px auto;
+  margin: 36px auto 18px auto;
   width: 340px;  
 }
 
@@ -86,7 +164,7 @@ input:focus, button:focus {
 }
 
 .input-container {
-  margin: 18px auto;
+  margin: 36px auto 18px auto;
   width: 100%;
 }
 

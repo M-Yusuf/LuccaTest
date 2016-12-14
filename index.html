@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>Lucca Chat</title>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300i,400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300i,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
@@ -19,8 +20,10 @@
         <div class="message-container">
           <div ng-repeat="message in messages">
             <p><b>{{message.author}}</b> {{message.time | date:'yyyy-MM-dd HH:mm:ss Z'}}</p>
-            <img style="width:100px; height:auto;" ng-src="{{message.img}}" class="img-chat" ng-class="{left:message.me}">
-            <p>{{message.message}}</p>
+            <div class="message-content-container">
+              <img ng-src="{{message.img}}" class="img-chat" ng-class="{left:message.me}">
+              <p>{{message.message}}</p>
+            </div>
           </div>
         </div>
         <div class="type-animation-container container-temp" ng-if="messageInput">
