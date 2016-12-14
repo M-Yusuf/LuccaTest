@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>Lucca Chat</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300i,400" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js"></script>
-    <script src="js/app.js"></script>
+    <script src="./js/app.js"></script>
   </head>
   <body>
     <div class="mainBody" ng-controller="ChatController">
@@ -33,7 +33,7 @@
         elle était fixée au bas de l'écran  -->
         <div class="input-container">
           <form ng-submit="sendMessage()">
-            <input placeholder="Envoyer un message" ng-model="currentMessage" ng-change="updateInput()"><button>send</button>
+            <input placeholder="Envoyer un message" ng-model="currentMessage" ng-change="updateInput()"><button><img src="./assets/plane.png" alt="Send"></button>
           </form>
         </div>
       </div>
