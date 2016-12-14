@@ -12,7 +12,10 @@ input:focus, button:focus {
 .header-container {
   background-color: #adc7c9;
   height: 70px;
+  margin-top: -20px;
+  position: fixed;
   width: 100%;
+  z-index: 25;
 }
 
 .header-container > img {
@@ -40,6 +43,7 @@ input:focus, button:focus {
 
 .chat-container {
   margin: 20px auto;
+  padding-top: 100px;
   padding-left: 85px;
   width: 610px;
 }
@@ -164,7 +168,7 @@ input:focus, button:focus {
 }
 
 .input-container {
-  margin: 36px auto 18px auto;
+  margin: 36px auto 100px auto;
   width: 100%;
 }
 
