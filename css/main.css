@@ -44,7 +44,49 @@ input:focus, button:focus {
   width: 610px;
 }
 
+.type-animation-container {
+  margin: 18px auto;
+  width: 340px;  
+}
+
+.type-animation-container > div > * {
+  display: inline-block !important;
+}
+
+.type-animation-container > div > img:nth-child(1) {
+  border-radius: 50%;
+  display: inline-block !important;
+  height: 42px;
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 42px;
+}
+
+.type-animation-container > div > p {
+  background-color: #fff;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  color: #006666 !important;
+  font-weight: 400;
+  font-size: 1.03rem;
+  font-style: italic;
+  padding: 13px 176px 13px 15px;
+  vertical-align: middle;
+}
+
+.type-animation-container > div > img:nth-child(3) {
+  background-color: #fff;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  height: 6px;
+  margin-left: -35px;
+  margin-top: 3px;
+  vertical-align: middle;
+  width: 20px;
+}
+
 .input-container {
+  margin: 18px auto;
   width: 100%;
 }
 
